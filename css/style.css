@@ -8,14 +8,52 @@
     margin: 0 auto;
     max-width: 900px;
     margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
     position: relative;
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
+    aspect-ratio: 16/11;
+    object-fit: cover;
+  }
+  
+.image {
+    display: none;
+    width: 100%;
+    aspect-ratio: 21/9;
+    object-fit: cover;
+}
+
+.description {
+    position: absolute;
+    bottom: 50px;
+    color: white;
+    right: 15px;
+    text-align: end;
+}
+
+.active {
+    display: block;
+}
+
+.icon {
+    position: absolute;
+    z-index: 50;
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    color: white;
+    transform: translateY(-50%);
+}
+
+.icon-up {
+    top: 50%;
+    right: 20px;
+}
+
+.icon-down {   
+    top: 50%;
+    left: 20px;
 }
 
 
